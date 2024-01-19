@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #EFF3F6;" stylesheets="@css/ParentDashboard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanagement.Controllers.ParentAnnouncementDashboardController">
+    <children>
+        <fx:include source="ParentSideBar.fxml" />
+        <fx:include source="NavDashboard.fxml" />
+      <AnchorPane layoutX="258.0" layoutY="84.0" prefHeight="637.0" prefWidth="994.0">
+         <children>
+            <ImageView fitHeight="165.0" fitWidth="1022.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/bg-course.jpg" />
+            </image>
+         </ImageView>
+             <TableView fx:id="deadline_table" layoutX="21.0" layoutY="183.0" prefHeight="335.0" prefWidth="980.0">
+                 <columns>
+                     <TableColumn fx:id="id_col" prefWidth="48.0" text="ID" />
+                     <TableColumn fx:id="title_col" prefWidth="313.0" text="Tiêu Đề" />
+                     <TableColumn fx:id="content_col" prefWidth="468.0" text="Nội dung" />
+                     <TableColumn fx:id="datetime_col" prefWidth="149.0" text="Thời gian" />
+                 </columns>
+             </TableView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

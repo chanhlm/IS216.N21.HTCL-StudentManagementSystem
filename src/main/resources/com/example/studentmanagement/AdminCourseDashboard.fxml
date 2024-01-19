@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #EFF3F6;" stylesheets="@css/AdminDashboard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanagement.Controllers.AdminCourseDashboardController">
+   <children>
+      <fx:include source="AdminSideBar.fxml" />
+      <fx:include source="NavDashboard.fxml" />
+      <AnchorPane layoutX="258.0" layoutY="84.0" prefHeight="637.0" prefWidth="994.0">
+         <children>
+            <TableView fx:id="course_table" layoutX="21.0" layoutY="183.0" prefHeight="335.0" prefWidth="980.0" stylesheets="@css/AdminDashboard.css">
+               <columns>
+                  <TableColumn fx:id="course_id" prefWidth="70.0" text="Mã môn" />
+                  <TableColumn fx:id="course_name" prefWidth="213.0" text="Tên môn" />
+                  <TableColumn fx:id="time_start_in_day" prefWidth="152.0" text="Vào tiết" />
+                  <TableColumn fx:id="time_end_in_day" prefWidth="152.0" text="Ra tiết" />
+                  <TableColumn fx:id="day_of_week" prefWidth="76.0" text="Thứ" />
+                  <TableColumn fx:id="teacher_name" prefWidth="248.0" styleClass="table" text="Giáo viên" />
+                  <TableColumn fx:id="class_name" prefWidth="67.0" text="Lớp" />
+               </columns>
+            </TableView>
+            <fx:include source="AdminDashboardOverviewCard.fxml" />
+            <AnchorPane layoutX="21.0" layoutY="532.0" prefHeight="42.0" prefWidth="260.0">
+               <children>
+                  <Button fx:id="addButton" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" styleClass="action-button">
+                     <graphic>
+                        <ImageView fitHeight="59.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/plus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="modifyButton" layoutX="58.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" styleClass="action-button">
+                     <graphic>
+                        <ImageView fitHeight="59.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" styleClass="action-button">
+                           <image>
+                              <Image url="@icons/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="removeButton" layoutX="117.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="58.0" styleClass="action-button">
+                     <graphic>
+                        <ImageView fitHeight="59.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" styleClass="action-button">
+                           <image>
+                              <Image url="@icons/remove.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

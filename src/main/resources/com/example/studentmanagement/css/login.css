@@ -1,0 +1,44 @@
+.text-field {
+    -fx-text-box-border: transparent;
+    -fx-focus-color: #1d1d1d;
+    -fx-background-color: #2C67E1;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #C4C4C4;
+    -fx-min-width: 310px;
+    -fx-min-height: 45px;
+    -fx-font-size: 15px;
+    -fx-font-family: Montserrat;
+    placeholder-text-fill: #C4C4C4;
+}
+
+.text-field:hover {
+    -fx-background-color: rgba(44, 103, 225, 0.88);
+}
+
+.choice-box .label {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-family: Montserrat;
+}
+
+.choice-box .menu-item .label{
+    -fx-text-fill: #1d1d1d;
+}
+
+
+.sign-in-button {
+    -fx-border-radius: 40px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #2C67E1;
+}
+
+.sign-in-button:hover {
+    /* cursor */
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+
+.sign-up-change-text:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.6;
+}

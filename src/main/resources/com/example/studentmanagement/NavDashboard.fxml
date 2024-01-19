@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="81.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanagement.Controllers.NavDashboardController">
+    <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/logo.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="22.0" fitWidth="18.0" layoutX="1111.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/icons8_bell_24px.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="22.0" fitWidth="18.0" layoutX="1152.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/icons8_help_32px.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="22.0" fitWidth="18.0" layoutX="1190.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/icons8_settings_26px.png" />
+            </image>
+        </ImageView>
+        <TextField layoutX="506.0" layoutY="27.0" opacity="0.31" prefHeight="30.0" prefWidth="268.0" promptText="Go Seach" style="-fx-background-color: transparent; -fx-padding: 0px 22px 0px 8px; -fx-border-radius: 5px; -fx-border-color: #AEB2C3;" text="Go Seach">
+            <font>
+                <Font name="Montserrat Regular" size="13.0" />
+            </font>
+            <effect>
+                <DropShadow color="#b9b6b6" />
+            </effect>
+        </TextField>
+      <ImageView fx:id="signoutButton" fitHeight="22.0" fitWidth="18.0" layoutX="1231.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/signout.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

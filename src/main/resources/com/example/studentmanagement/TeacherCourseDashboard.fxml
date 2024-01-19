@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #EFF3F6;" stylesheets="@css/TeacherDashboard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanagement.Controllers.TeacherCourseDashboardController">
+    <children>
+        <fx:include source="TeacherSideBar.fxml" />
+        <fx:include source="NavDashboard.fxml" />
+        <AnchorPane layoutX="258.0" layoutY="84.0" prefHeight="637.0" prefWidth="994.0">
+            <children>
+                <TableView fx:id="course_table" layoutX="21.0" layoutY="183.0" prefHeight="335.0" prefWidth="980.0">
+                    <columns>
+                        <TableColumn fx:id="course_id" prefWidth="70.0" text="Mã môn" />
+                        <TableColumn fx:id="course_name" prefWidth="253.0" text="Tên môn" />
+                        <TableColumn fx:id="day_of_week" prefWidth="104.0" text="Thứ" />
+                        <TableColumn fx:id="time_start_in_day" prefWidth="197.0" text="Vào tiết" />
+                        <TableColumn fx:id="time_end_in_day" prefWidth="211.0" text="Ra tiết" />
+                        <TableColumn fx:id="class_name_col" prefWidth="144.0" text="Lớp" />
+                    </columns>
+                </TableView>
+                <fx:include source="TeacherDashboardOverviewCard.fxml" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

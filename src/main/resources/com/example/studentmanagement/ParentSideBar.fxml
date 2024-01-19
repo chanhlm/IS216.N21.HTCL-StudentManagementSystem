@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane layoutX="-1.0" layoutY="84.0" prefHeight="637.0" prefWidth="260.0" styleClass="sidebar" stylesheets="@css/ParentDashboard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanagement.Controllers.ParentSideBarController">
+    <children>
+        <HBox fx:id="class_sidebar_btn" alignment="CENTER_LEFT" layoutY="214.0" prefHeight="30.0" prefWidth="260.0" styleClass="sidebar-btn-text">
+            <children>
+                <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@icons/class.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </ImageView>
+                <Label text="Lớp" textFill="#8cf8a2">
+                    <font>
+                        <Font name="Cambria" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+            <padding>
+                <Insets left="5.0" />
+            </padding>
+        </HBox>
+        <HBox fx:id="deadline_sidebar_btn" alignment="CENTER_LEFT" layoutY="315.0" prefHeight="30.0" prefWidth="180.0" styleClass="sidebar-btn-text">
+            <children>
+                <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@icons/deadline.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </ImageView>
+                <Label text="Bài tập" textFill="#8cf8a2">
+                    <font>
+                        <Font name="Cambria" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+            <padding>
+                <Insets left="5.0" />
+            </padding>
+        </HBox>
+        <HBox fx:id="course_sidebar_btn" alignment="CENTER_LEFT" layoutY="264.0" prefHeight="30.0" prefWidth="180.0" styleClass="sidebar-btn-text">
+            <children>
+                <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@icons/calender.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </ImageView>
+                <Label prefHeight="21.0" prefWidth="146.0" text="Thời khóa biểu" textFill="#8cf8a2">
+                    <font>
+                        <Font name="Cambria" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+            <padding>
+                <Insets left="5.0" />
+            </padding>
+        </HBox>
+        <fx:include source="ChangePasswordButton.fxml"  />
+        <ImageView fx:id="avatarImageView" fitHeight="116.0" fitWidth="110.0" layoutX="75.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" styleClass="avatar-image">
+            <image>
+                <Image url="@images/default-avatar.jpg" />
+            </image>
+        </ImageView>
+      <ComboBox fx:id="childChoosingComboBox" layoutX="55.0" layoutY="500.0" prefWidth="150.0" />
+      <HBox fx:id="announcement_sidebar_btn" alignment="CENTER_LEFT" layoutY="366.0" prefHeight="30.0" prefWidth="180.0" styleClass="sidebar-btn-text">
+         <children>
+            <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/announcement.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label text="Thông báo" textFill="#8cf8a2">
+               <font>
+                  <Font name="Cambria" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </HBox>
+    </children>
+</AnchorPane>

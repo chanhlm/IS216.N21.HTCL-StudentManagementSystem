@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #EFF3F6;" stylesheets="@css/TeacherDashboard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanagement.Controllers.TeacherGradeDashboard">
+   <children>
+      <fx:include source="TeacherSideBar.fxml" />
+      <fx:include source="NavDashboard.fxml" />
+      <AnchorPane layoutX="258.0" layoutY="84.0" prefHeight="637.0" prefWidth="994.0">
+         <children>
+            <TableView fx:id="deadline_table" layoutX="21.0" layoutY="183.0" prefHeight="335.0" prefWidth="980.0">
+               <columns>
+                  <TableColumn fx:id="id_col" prefWidth="43.0" text="ID" />
+                  <TableColumn fx:id="title_col" prefWidth="302.0" text="Tiêu Đề" />
+                  <TableColumn fx:id="date_start_col" prefWidth="100.0" text="Ngày mở" />
+                  <TableColumn fx:id="date_end_col" prefWidth="100.0" text="Ngày đóng" />
+                  <TableColumn fx:id="course_col" prefWidth="94.0" text="Môn" />
+                  <TableColumn fx:id="class_col" prefWidth="65.0" text="Lớp" />
+                  <TableColumn fx:id="student_name_col" prefWidth="173.0" text="Học Sinh " />
+                  <TableColumn fx:id="status_col" prefWidth="101.0" />
+               </columns>
+            </TableView>
+            <fx:include source="TeacherDashboardOverviewCard.fxml" />
+            <AnchorPane layoutX="21.0" layoutY="527.0" prefHeight="42.0" prefWidth="294.0">
+               <children>
+                  <Button fx:id="gradeButton" layoutY="1.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="58.0" styleClass="action-button">
+                     <graphic>
+                        <ImageView fitHeight="59.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" styleClass="action-button">
+                           <image>
+                              <Image url="@icons/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

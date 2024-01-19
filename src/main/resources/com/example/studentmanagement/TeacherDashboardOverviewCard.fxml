@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="165.0" prefWidth="999.0" stylesheets="@css/AdminDashboardOverviewCard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanagement.Controllers.TeacherDashboardOverviewCardController">
+<children>
+    <ImageView fitHeight="165.0" fitWidth="1022.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@images/bg-course.jpg" />
+        </image>
+    </ImageView>
+    <AnchorPane fx:id="allClassStudentCard" layoutX="27.0" layoutY="33.0" prefHeight="76.0" prefWidth="201.0">
+        <children>
+            <ImageView fitHeight="46.0" fitWidth="51.0" layoutX="24.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@icons/graduation.png" />
+                </image>
+            </ImageView>
+            <Text layoutX="93.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Tổng số học sinh của lớp" wrappingWidth="164.37890625" />
+            <Text fx:id="allClassStudentText" layoutX="93.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="content" text="0" />
+            <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="257.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@icons/double-right.png" />
+                </image>
+                <styleClass>
+                    <String fx:value="opacity-08" />
+                    <String fx:value="overview-admin-card" />
+                </styleClass>
+            </ImageView>
+        </children>
+        <styleClass>
+            <String fx:value="overview-admin-card" />
+            <String fx:value="hand-cursor" />
+            <String fx:value="opacity-08" />
+        </styleClass>
+    </AnchorPane>
+    <AnchorPane fx:id="homeworkCompletedCard" layoutX="361.0" layoutY="33.0" prefHeight="76.0" prefWidth="313.0">
+        <children>
+            <ImageView fitHeight="46.0" fitWidth="51.0" layoutX="24.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@icons/trophy.png" />
+                </image>
+            </ImageView>
+            <Text layoutX="99.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Bài tập đã chấm" wrappingWidth="164.37890625" />
+            <Text fx:id="homeworkCompletedText" layoutX="99.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="content" text="0" />
+            <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="255.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@icons/double-right.png" />
+                </image>
+            </ImageView>
+        </children>
+        <styleClass>
+            <String fx:value="overview-admin-card" />
+            <String fx:value="hand-cursor" />
+        </styleClass>
+    </AnchorPane>
+    <AnchorPane fx:id="homeworkRemainCard" layoutX="696.0" layoutY="33.0" prefHeight="76.0" prefWidth="313.0">
+        <children>
+            <ImageView fitHeight="46.0" fitWidth="51.0" layoutX="24.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@icons/time.png" />
+                </image>
+            </ImageView>
+            <Text layoutX="99.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Bài tập cần chấm" wrappingWidth="164.37890625" />
+            <Text fx:id="homeworkRemainText" layoutX="99.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="content" text="0" />
+            <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="263.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@icons/double-right.png" />
+                </image>
+            </ImageView>
+        </children>
+        <styleClass>
+            <String fx:value="overview-admin-card" />
+            <String fx:value="hand-cursor" />
+            <String fx:value="opacity-08" />
+        </styleClass>
+    </AnchorPane>
+</children>
+</AnchorPane>
